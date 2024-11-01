@@ -1,0 +1,442 @@
+/* Default website settings */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    font-family: "Roboto Mono", monospace;
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 900px;
+    margin: auto;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+
+/* Desktop */
+@media all and (min-width: 768px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            padding: 1rem 1.5rem;
+        }
+    
+        ul {
+            display: flex;
+    
+            li {
+                padding: 1.5rem;
+    
+                @media (hover: hover) and (pointer: fine) {:hover {
+                    transition: 0.2s;
+                    color: red;
+                    cursor: pointer;
+                    font-weight: bold;
+                }}
+            }
+        }
+    }
+}
+
+/* Mobile */
+nav {
+    h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 1rem 1.5rem;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+
+        li {
+            padding: 1rem;
+            text-align: center;
+
+            @media (hover: hover) and (pointer: fine) {:hover {
+                transition: 0.2s;
+                color: red;
+                cursor: pointer;
+                font-weight: bold;
+            }}
+        }
+    }
+}
+
+/* First Look */
+
+/* Desktop */
+@media all and (min-width: 768px) {
+    .firstlook {
+        height: calc(100vh - 8rem);
+        margin-bottom: 4rem;
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+
+        div {
+            h1 {
+                font-size: 2rem;
+            }
+
+            ul {
+                display: flex;
+                
+                li {
+                    margin-right: 2rem;
+                    margin-top: 1rem;
+                    font-size: 1.2rem;
+
+                    .fa-square-instagram {
+                        color: rgb(238, 116, 112);
+                    }
+                    .fa-linkedin {
+                        color: rgb(41, 102, 188);
+                    }
+                    .fa-square-github {
+                        color: rgb(110, 84, 148);
+                    }
+                }
+
+                .instagram {
+                    @media (hover: hover) and (pointer: fine) {:hover {
+                        transition: 0.2s;
+                        color: rgb(238, 116, 112);
+                        cursor: pointer;
+                        font-weight: bold;
+                    }}
+                }
+
+                .linkedin {
+                    @media (hover: hover) and (pointer: fine) {:hover {
+                        transition: 0.2s;
+                        color: rgb(41, 102, 188);
+                        cursor: pointer;
+                        font-weight: bold;
+                    }}
+                }
+
+                .github {
+                    @media (hover: hover) and (pointer: fine) {:hover {
+                        transition: 0.2s;
+                        color: rgb(110, 84, 148);
+                        cursor: pointer;
+                        font-weight: bold;
+                    }}
+                }
+            }
+        }
+
+        img {
+            border-radius: 100%;
+            width: 20rem;
+        }
+    }
+}
+
+/* Mobile */
+@media all and (max-width: 768px) {
+    .firstlook {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: top;
+        align-items: center;
+        padding: 1rem;
+
+        div {
+            h1 {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+
+            ul {
+                display: flex;
+                
+                li {
+                    text-align: center;
+                    font-size: 1rem;
+                    margin: 1rem;
+                    flex: 1;
+
+                    .fa-square-instagram {
+                        color: rgb(238, 116, 112);
+                    }
+                    .fa-linkedin {
+                        color: rgb(41, 102, 188);
+                    }
+                    .fa-square-github {
+                        color: rgb(110, 84, 148);
+                    }
+                    
+                    a {
+                        margin: auto;
+                    }
+                }
+
+                .instagram {
+                    @media (hover: hover) and (pointer: fine) {:hover {
+                        transition: 0.2s;
+                        color: rgb(238, 116, 112);
+                        cursor: pointer;
+                        font-weight: bold;
+                    }}
+                }
+
+                .linkedin {
+                    @media (hover: hover) and (pointer: fine) {:hover {
+                        transition: 0.2s;
+                        color: rgb(41, 102, 188);
+                        cursor: pointer;
+                        font-weight: bold;
+                    }}
+                }
+
+                .github {
+                    @media (hover: hover) and (pointer: fine) {:hover {
+                        transition: 0.2s;
+                        color: rgb(110, 84, 148);
+                        cursor: pointer;
+                        font-weight: bold;
+                    }}
+                }
+            }
+        }
+
+        img {
+            border-radius: 100%;
+            width: 12rem;
+            margin: 1rem;
+        }
+    }
+}
+
+/* About me */
+.about {
+    margin: 1rem;
+    word-wrap: break-word;
+
+    h1 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    p {
+        margin-top: 1rem;
+    }
+
+    ul {
+        list-style:disc;
+        list-style-position: inside;
+    }
+}
+
+/* Projects */
+
+/* Desktop */
+@media all and (min-width: 768px)
+    {
+    .projects {
+        h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-left: 1rem;
+        }
+
+        .boxes {
+            display: flex;
+            justify-content: space-around;
+            
+            div {
+                min-width: 310px;
+                max-width: 400px;
+                width: auto;
+                aspect-ratio: 1;
+                margin: 2rem;
+                color: white;
+                font-size: 2rem;
+                padding: 2rem;
+            }
+        
+            .programming {
+                background-image: url("images/programming.jpg");
+                background-size: cover;
+                filter: grayscale(0.8);
+                border-radius: 1rem;
+                display: flex;
+                flex-direction: column-reverse;
+
+            }
+            .music {
+                background-image: url("images/music.jpg");
+                background-size: cover;
+                filter: grayscale(0.8);
+                border-radius: 1rem;
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            a {
+                @media (hover: hover) and (pointer: fine) {:hover {
+                    transition: 0.2s;
+                    filter: grayscale(0);
+                    cursor: pointer;
+                }}
+            }
+        }
+    }
+}
+
+/* Mobile */
+@media all and (max-width: 768px) {
+    .projects {
+        h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-left: 1rem;
+        }
+
+        .boxes {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            
+            div {
+                width: calc(100% - 4rem);
+                max-width: 500px;
+                aspect-ratio: 1;
+                margin: 2rem;
+                color: white;
+                font-size: 2rem;
+                padding: 2rem;
+            }
+        
+            .programming {
+                background-image: url("images/programming.jpg");
+                background-size: cover;
+                filter: grayscale(0.8);
+                border-radius: 1rem;
+                display: flex;
+                flex-direction: column-reverse;
+
+            }
+            .music {
+                background-image: url("images/music.jpg");
+                background-size: cover;
+                filter: grayscale(0.8);
+                border-radius: 1rem;
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            a {
+                @media (hover: hover) and (pointer: fine) {:hover {
+                    transition: 0.2s;
+                    filter: grayscale(0);
+                    cursor: pointer;
+                }}
+            }
+        }
+    }
+}
+
+/* Contact */
+
+.contact {
+    h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-left: 1rem;
+    }
+
+    .send {
+        div {
+            padding: 1rem;
+            background-color: rgb(23, 23, 23);
+            width: auto;
+            margin: 1rem;
+            border-radius: 1rem;
+            cursor: pointer;
+            color: white;
+        }
+
+        i {
+            vertical-align: super;
+            font-size: 1rem;
+        }
+
+        @media (hover: hover) and (pointer: fine) {:hover {
+            transition: 0.2s;
+            background-color: rgb(50, 50, 50);
+        }}
+    }
+
+    ul {
+        display: flex;
+        margin-left: 1rem;
+        
+        li {
+            margin-right: 2rem;
+            font-size: 1.2rem;
+
+            .fa-square-instagram {
+                color: rgb(238, 116, 112);
+            }
+            .fa-linkedin {
+                color: rgb(41, 102, 188);
+            }
+            .fa-square-github {
+                color: rgb(110, 84, 148);
+            }
+        }
+
+        .instagram {
+            @media (hover: hover) and (pointer: fine) {:hover {
+                transition: 0.2s;
+                color: rgb(238, 116, 112);
+                cursor: pointer;
+                font-weight: bold;
+            }}
+        }
+
+        .linkedin {
+            @media (hover: hover) and (pointer: fine) {:hover {
+                transition: 0.2s;
+                color: rgb(41, 102, 188);
+                cursor: pointer;
+                font-weight: bold;
+            }}
+        }
+
+        .github {
+            @media (hover: hover) and (pointer: fine) {:hover {
+                transition: 0.2s;
+                color: rgb(110, 84, 148);
+                cursor: pointer;
+                font-weight: bold;
+            }}
+        }
+    }
+}
+
+/* Footer */
+
+footer {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: rgb(23, 23, 23);
+    padding: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 16rem;
+    text-align: center;
+}

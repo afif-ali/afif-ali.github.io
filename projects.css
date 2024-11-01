@@ -1,0 +1,188 @@
+/* Default website settings */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    font-family: "Roboto Mono", monospace;
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 900px;
+    margin: auto;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+
+/* Desktop */
+@media all and (min-width: 768px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            padding: 1rem 1.5rem;
+        }
+    
+        ul {
+            display: flex;
+    
+            li {
+                padding: 1.5rem;
+    
+                @media (hover: hover) and (pointer: fine) {:hover {
+                    transition: 0.2s;
+                    color: red;
+                    cursor: pointer;
+                    font-weight: bold;
+                }}
+            }
+        }
+    }
+}
+
+/* Mobile */
+nav {
+    h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 1rem 1.5rem;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+
+        li {
+            padding: 1rem;
+            text-align: center;
+
+            @media (hover: hover) and (pointer: fine) {:hover {
+                transition: 0.2s;
+                color: red;
+                cursor: pointer;
+                font-weight: bold;
+            }}
+        }
+    }
+}
+
+/* Projects */
+/* Desktop */
+
+@media all and (min-width: 768px) {
+    .projects {
+        .header {
+            font-size: 2rem;
+            font-weight: bold;
+            padding: 1rem 1.5rem;
+            text-align: center;
+        }
+
+        .project {
+            display: flex;
+            text-align: left;
+            background-color: rgb(245, 245, 245);
+            padding: 1rem;
+            margin: 1rem;
+            border-radius: 1rem;
+
+            .text {
+                padding: 1rem;
+                width: calc(100% - 20rem);
+
+                h1 {
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
+            }
+
+            img {
+                width: 20rem;
+                border-radius: 1rem;
+            }
+        }
+
+        .project:nth-child(even) {
+            flex-direction: row;
+
+            .text {
+                padding-left: 2rem;
+            }
+        }
+        .project:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+        
+        @media (hover: hover) and (pointer: fine) {.project:hover {
+            transition: .2s;
+            cursor: pointer;
+            background-color: rgb(239, 239, 239);
+        }}
+
+    }
+}
+
+/* Mobile */
+@media all and (max-width: 768px) {
+    .projects {
+        .header {
+            font-size: 2rem;
+            font-weight: bold;
+            padding: 1rem 1.5rem;
+            text-align: center;
+        }
+
+        .project {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background-color: rgb(245, 245, 245);
+            padding: 1rem;
+            margin: 1rem;
+            border-radius: 1rem;
+
+            .text {
+                padding: 1rem;
+                width: 100%;
+
+                h1 {
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
+            }
+
+            img {
+                width: 15rem;
+                margin: auto;
+                border-radius: 1rem;
+            }
+        }
+        
+        @media (hover: hover) and (pointer: fine) {.project:hover {
+            transition: .2s;
+            cursor: pointer;
+            background-color: rgb(239, 239, 239);
+        }}
+
+    }
+}
+
+/* Footer */
+
+footer {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: rgb(23, 23, 23);
+    padding: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 1rem;
+    text-align: center;
+}
